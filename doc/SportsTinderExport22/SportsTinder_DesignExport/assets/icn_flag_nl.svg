@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icn_flag_nl</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing" transform="translate(-200.000000, -389.000000)" fill-rule="nonzero">
+            <g id="icn_flag_nl" transform="translate(200.000000, 389.000000)">
+                <circle id="Oval" fill="#F0F0F0" cx="20" cy="20" r="20"></circle>
+                <path d="M20,0 C11.4007031,0 4.06984375,5.4275 1.24398437,13.0435156 L38.7560937,13.0435156 C35.9301563,5.4275 28.5992969,0 20,0 Z" id="Path" fill="#A2001D"></path>
+                <path d="M20,40 C28.5992969,40 35.9301562,34.5725 38.7560156,26.9564844 L1.24398437,26.9564844 C4.06984375,34.5725 11.4007031,40 20,40 Z" id="Path" fill="#0052B4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

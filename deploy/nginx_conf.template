@@ -1,0 +1,33 @@
+server {
+  listen 80;
+  listen [::]:80;
+  server_name {{domain}};
+  return 301 https://$host$request_uri;
+}
+
+server {
+  listen 443 ssl;
+
+  ssl on;
+  ssl_certificate {{ssl_cert}};
+  ssl_certificate_key {{ssl_key}};
+  server_name {{domain}};
+
+  #location ~ /(?<path>(static|api|admin))/(?<subpath>(.*)) {
+  #  proxy_pass http://localhost:8082/$path/$subpath;
+  #  include proxy_params;
+  #}
+
+  # Standalone Nginx+React
+  #location / {
+  #    root   /usr/share/nginx/html;
+  #    #index  index.html index.htm;
+  #    try_files $uri $uri/ /index.html;
+  #}
+
+  location / {
+    proxy_pass http://localhost:8082/;
+    include proxy_params;
+  }
+
+}

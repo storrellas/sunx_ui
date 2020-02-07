@@ -1,0 +1,52 @@
+Test plan Try new Sport - my test
+
+Scenarios to test basic flow
+1)	User 1 - First time visitor without any existing friends 
+a.	Select language
+b.	Go through all sports: N, N, L, A, N, L, A, L, A, N (L), N, N, N (A), A, L, L, A, N
+c.	Go back to previous sport and change preference two times (see)
+d.	Skip friend code request, fill in every other prompt that appears
+e.	Share own code with someone else (user 2)
+
+and celebration triggers
+2)	User 2 - First time visitor with existing friends – 10 sports
+a.	Select language
+b.	Go through first 10 sports select: N, N, L, L, N, A, A, L, A, N (A)
+c.	Go back to previous sport and change preference two times (see)
+d.	Fill in code from user 1, fill in every prompt that appears
+e.	Share own code with someone else (user 2)
+
+Returning visitor
+3)	Returning visitor User 1 on same device /browser should get celebration because user 1 selected similar sports
+
+Actions to test:
+a)	Enter faulty email address
+b)	Forgot password
+c)	Share with friend
+d)	Enter friend code
+e)	Undo sport preference
+f)	Select / change language
+g)	Check all menu pages 
+h)	Add information in menu – should trigger fewer prompts
+i)	Deleting cookies and resetting cookies
+
+Scenarios to test prompt logic based on partially completed information
+A) Test skipping logic based on not selecting sports
+a)	User 3 goes through the flow and gets to see all prompts, and does the following:
+a.	Sport 1-7 no interest or already play
+b.	When friend code is requested, skips
+c.	Sport 8 selects “like to try”
+i.	(email prompt should only appear now)
+d.	When email is requested enters email
+e.	Skips the next prompt request
+f.	Fills in all other prompts
+
+B) Repeating logic when entire cycle completed
+b)	User 3 continues until all prompts are completed and waits for skipped prompt(s) to re-appear
+
+C) Test skipping logic based on filling in information in menu
+a)	User 4 goes through the flow and likes to try 5th sport , 8th
+a.	Skips friend request
+b.	Skips entering email and at 3rd prompt goes to menu and fills in all other information
+c.	Continues till the end and note down which prompts were shown
+d.	Continues until all prompts are completed and waits for skipped prompt(s) to re-appear

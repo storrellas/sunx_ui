@@ -1,0 +1,7 @@
+/var/log/stem/stem.log {
+  rotate 12
+  daily
+  compress
+  missingok
+  notifempty
+}
