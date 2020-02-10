@@ -48,7 +48,7 @@ import StarIcon from '@material-ui/icons/Star';
 import StarHalfIcon from '@material-ui/icons/StarHalf';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 
-const drawerWidth = 240;
+const drawerWidth = "50%";
 
 const styles = theme => ({
   root: {
@@ -146,11 +146,11 @@ class Landing extends React.Component {
               aria-label="open drawer"
               onClick={(e) => this.handleDrawerOpen()}
               edge="start"
-              className={clsx(classes.menuButton, open && classes.hide)}
+              className={clsx(classes.menuButton)}
             >
               <MenuIcon />
             </IconButton>
-            <img src={logoImage} style={{ width: "100px"}}></img> 
+            <img src={logoImage} style={{ width: "50%"}}></img> 
             <div style={{ display: 'flex', justifyContent: 'flex-end', flexGrow: '1'}}>
               <NotificationsIcon />
               <SearchIcon />
@@ -226,9 +226,9 @@ class Landing extends React.Component {
 
             <div style={{ display: 'flex', border: '1px solid black', borderRadius: '10px', padding: '20px 0 20px 0', marginTop: '20px'}}>
               <ArrowLeftIcon fontSize="large"  style={{ alignSelf: 'center'}} />
-              <div style={{ position: 'relative', height: "110px", backgroundColor: 'yellow'}}>
+              <div style={{ position: 'relative', height: "110px"}}>
                 <img src={dish1Image} style={{ top: 0, left: 0, height: "100%", width: "150px"}}></img> 
-                <div style={{ position:'absolute', top: 0, left: 0, backgroundColor:'green'}}>
+                <div style={{ position:'absolute', top: 0, left: 0}}>
                   <StarIcon />
                   <StarIcon />
                   <StarIcon />
@@ -245,9 +245,9 @@ class Landing extends React.Component {
                   <FormatListBulletedIcon/>
                   <div>17</div>
                 </div>
-                <div style={{ width: "100%", height: '20%', display: 'flex', marginTop: '20px'}}>
+                <div style={{ width: "100%", height: '20%', display: 'flex', marginTop: '20px', justifyContent: 'center'}}>
                   <AddCircleIcon />
-                  <div>35 servings</div>
+                  <div>2</div>
                   <RemoveCircleIcon />
                 </div>
               </div>
@@ -256,9 +256,9 @@ class Landing extends React.Component {
 
             <div style={{ display: 'flex',  border: '1px solid black', borderRadius: '10px', padding: '20px 0 20px 0', marginTop: '20px'}}>
               <ArrowLeftIcon fontSize="large"  style={{ alignSelf: 'center'}} />
-              <div style={{ position: 'relative', height: "110px", backgroundColor: 'yellow'}}>
+              <div style={{ position: 'relative', height: "110px"}}>
                 <img src={dish2Image} style={{ top: 0, left: 0, height: "100%", width: "150px"}}></img> 
-                <div style={{ position:'absolute', top: 0, left: 0, backgroundColor:'green'}}>
+                <div style={{ position:'absolute', top: 0, left: 0}}>
                   <StarIcon />
                   <StarIcon />
                   <StarIcon />
@@ -275,9 +275,9 @@ class Landing extends React.Component {
                   <FormatListBulletedIcon/>
                   <div>17</div>
                 </div>
-                <div style={{ width: "100%", height: '20%', display: 'flex', marginTop: '20px'}}>
+                <div style={{ width: "100%", height: '20%', display: 'flex', marginTop: '20px', justifyContent: 'center'}}>
                   <AddCircleIcon />
-                  <div>35 servings</div>
+                  <div>35</div>
                   <RemoveCircleIcon />
                 </div>
               </div>
@@ -286,9 +286,9 @@ class Landing extends React.Component {
 
             <div style={{ display: 'flex', border: '1px solid black', borderRadius: '10px', padding: '20px 0 20px 0', marginTop: '20px'}}>
               <ArrowLeftIcon fontSize="large"  style={{ alignSelf: 'center'}} />
-              <div style={{ position: 'relative', height: "110px", backgroundColor: 'yellow'}}>
+              <div style={{ position: 'relative', height: "110px"}}>
                 <img src={dish3Image} style={{ top: 0, left: 0, height: "100%", width: "150px"}}></img> 
-                <div style={{ position:'absolute', top: 0, left: 0, backgroundColor:'green'}}>
+                <div style={{ position:'absolute', top: 0, left: 0}}>
                   <StarIcon />
                   <StarBorderIcon />
                   <StarBorderIcon />
@@ -305,37 +305,15 @@ class Landing extends React.Component {
                   <FormatListBulletedIcon/>
                   <div>2</div>
                 </div>
-                <div style={{ width: "100%", height: '20%', display: 'flex', marginTop: '20px'}}>
+                <div style={{ width: "100%", height: '20%', display: 'flex', marginTop: '20px', justifyContent: 'center'}}>
                   <AddCircleIcon />
-                  <div>4 servings</div>
+                  <div>4</div>
                   <RemoveCircleIcon />
                 </div>
               </div>
               <ArrowRightIcon fontSize="large" style={{ alignSelf: 'center'}}/>
             </div>
-            {/* <Typography paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-              facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-              gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-              donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-              adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-              Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-              imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-              arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-              donec massa sapien faucibus et molestie ac.
-            </Typography>
-            <Typography paragraph>
-              Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-              facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-              tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-              consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-              vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-              hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-              tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-              nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-              accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-            </Typography> */}
+
             </Container>
           {/* </main> */}
 
