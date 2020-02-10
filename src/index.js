@@ -65,13 +65,48 @@ class AnonymousRoute extends React.Component {
 }
 
 
+
+
+
+import PersistentDrawerLeftClass from "./epics/PersistentDrawerLeftClass.js";
+ReactDOM.render((
+  <PersistentDrawerLeftClass />
+), document.getElementById('root'))
+/**/
+
+
+
+/*
+import PersistentDrawerLeft from "./epics/PersistentDrawerLeft.js";
+ReactDOM.render((
+  <PersistentDrawerLeft></PersistentDrawerLeft>
+), document.getElementById('root'))
+/**/
+/*
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Drawer from '@material-ui/core/Drawer';
+
+
+ReactDOM.render((
+  <Container maxWidth="xs">
+    <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
+    <Drawer open>
+      <div> This is my
+    </Drawer>
+  </Container>
+), document.getElementById('root'))
+/**/
+
+/*
 ReactDOM.render((
   <Provider store={store}>
       <BrowserRouter>
         <Startup> 
-          <AnonymousRoute path="/" exact component={Landing} />
+          <AnonymousRoute path="/" exact component={} />
           <AuthenticatedRouteContainer exact path="/home" component={Home} />
         </Startup>
       </BrowserRouter>
   </Provider>
 ), document.getElementById('root'))
+/**/
