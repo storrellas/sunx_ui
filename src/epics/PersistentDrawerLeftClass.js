@@ -150,7 +150,7 @@ class Landing extends React.Component {
             >
               <MenuIcon />
             </IconButton>
-            <img src={logoImage} style={{ width: "50%"}}></img> 
+            <img src={logoImage} style={{ width: "50%", maxWidth: "150px" }}></img> 
             <div style={{ display: 'flex', justifyContent: 'flex-end', flexGrow: '1'}}>
               <NotificationsIcon />
               <SearchIcon />
