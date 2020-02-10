@@ -132,7 +132,7 @@ $RECYCLE.BIN/
 atlassian-ide-plugin.xml
 
 node_modules/
-build/
+#build/
 .eslintcache
 .DS_Store
 .DS_Store?
