@@ -26,7 +26,7 @@
     "css-loader": "^1.0.0",
     "file-loader": "^4.0.0",
     "image-webpack-loader": "^5.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "query-string": "^6.8.1",
     "react": "^16.5.2",
     "react-alice-carousel": "^1.15.2",
